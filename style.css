@@ -1,0 +1,16 @@
+:root {
+  --main-title-clr: #2E4F21;
+
+  --main-bg-clr: #A0F1BD;
+  --secondary-bg-clr: #FFFFFF;
+  --tertiary-bg-clr: #F9F9F9;
+}
+
+/* reset */
+*, 
+*::before, 
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
