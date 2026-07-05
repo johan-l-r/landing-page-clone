@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "work-sans";
+  src: url(./assets/fonts/WorkSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "work-sans";
+  src: url(./assets/fonts/WorkSans-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
 :root {
   --main-title-clr: #2E4F21;
 
@@ -30,6 +42,7 @@ a {
 /* general styles */
 body {
   background-color: var(--main-bg-clr);
+  font-family: "work-sans";
 }
 .heading {
   color: var(--main-title-clr);
