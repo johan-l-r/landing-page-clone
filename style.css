@@ -11,7 +11,7 @@
   font-style: normal;
 }
 :root {
-  --main-title-clr: #2E4F21;
+  --main-txt-clr: #2E4F21;
 
   --main-bg-clr: #A0F1BD;
   --secondary-bg-clr: #FFFFFF;
@@ -22,6 +22,11 @@
   --md-fs: 1.75rem;
   --lg-fs: 2rem;
   --xl-fs: 2.5rem;
+
+  --sm-spacing: 0.75rem;
+  --md-spacing: 1rem;
+  --lg-spacing: 2.5rem
+
 }
 
 /* reset */
@@ -42,10 +47,11 @@ a {
 /* general styles */
 body {
   background-color: var(--main-bg-clr);
+  color: var(--main-txt-clr);
   font-family: "work-sans";
+  padding: 1rem;
 }
 .heading {
-  color: var(--main-title-clr);
   text-align: center;
 }
 .hero-heading {
@@ -56,15 +62,30 @@ body {
 }
 
 /* sections */
-.navbar, 
-.navbar ul {
+header, 
+.navbar {
   display: flex;
 }
-.navbar {
+header {
   justify-content: space-between;
+  padding-block: var(--md-spacing);
+}
+header a {
+  color: var(--main-txt-clr);
+}
+.navbar {
+  gap: 1rem;
 }
 
 /* utility classes */
 .text-left {
   text-align: left;
+}
+
+/* components */
+.button {
+  background-color: var(--main-txt-clr);
+  color: var(--tertiary-bg-clr);
+  padding: var(--sm-spacing);
+  border-radius: 30px;
 }
