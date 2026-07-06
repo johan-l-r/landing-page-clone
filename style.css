@@ -49,9 +49,13 @@ body {
   background-color: var(--main-bg-clr);
   color: var(--main-txt-clr);
   font-family: "work-sans";
+  height: 100vh;
+}
+.wrapper {
   padding: 1rem;
 }
 .heading {
+  font-weight: 500;
   text-align: center;
 }
 .hero-heading {
@@ -60,21 +64,38 @@ body {
 .section-heading {
   font-size: var(--lg-fs);
 }
+section {
+  background-color: var(--secondary-bg-clr);
+}
 
 /* sections */
+/* header & navbar */
 header, 
-.navbar {
+nav {
   display: flex;
+  align-items: center;
 }
 header {
   justify-content: space-between;
-  padding-block: var(--md-spacing);
+  align-items: center;
 }
 header a {
   color: var(--main-txt-clr);
 }
-.navbar {
+nav {
   gap: 1rem;
+}
+/* hero section */
+.hero {
+  background-color: var(--main-bg-clr);
+  padding-block: var(--lg-spacing);
+
+}
+.pitch-side {
+  margin-block: var(--lg-spacing); 
+}
+h1 {
+  margin-bottom: var(--md-spacing);
 }
 
 /* utility classes */
@@ -86,6 +107,8 @@ header a {
 .button {
   background-color: var(--main-txt-clr);
   color: var(--tertiary-bg-clr);
+  font-size: var(--xs-fs);
+  font-weight: 500;
   padding: var(--sm-spacing);
   border-radius: 30px;
 }
