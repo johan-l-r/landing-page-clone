@@ -43,6 +43,12 @@ li {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  margin: 0 auto;
+}
 
 /* general styles */
 body {
@@ -55,8 +61,7 @@ body {
   padding: 1rem;
 }
 .heading {
-  font-weight: 500;
-  text-align: center;
+  font-weight: 400;
 }
 .hero-heading {
   font-size: var(--xl-fs);
@@ -66,6 +71,9 @@ body {
 }
 section {
   background-color: var(--secondary-bg-clr);
+}
+section > p {
+  margin-block: 1.75rem;
 }
 
 /* sections */
@@ -97,18 +105,63 @@ nav {
 h1 {
   margin-bottom: var(--md-spacing);
 }
+/* services section */
+.services {
+  background-color: var(--tertiary-bg-clr);
+  padding-block: 7.5rem 1rem;
+}
+.services .button {
+  margin: 0 auto 6.25rem auto;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md-spacing);
+}
 
 /* utility classes */
 .text-left {
   text-align: left;
 }
+.text-center {
+  text-align: center;
+}
 
 /* components */
 .button {
+  display: block;
   background-color: var(--main-txt-clr);
   color: var(--tertiary-bg-clr);
   font-size: var(--xs-fs);
   font-weight: 500;
+  width: fit-content;
   padding: var(--sm-spacing);
   border-radius: 30px;
+}
+.card {
+  background-color: #D2F8DC;
+  padding: var(--lg-spacing) var(--md-spacing);
+  border-radius: 15px;
+}
+.card .card__image {
+  width: 311px;
+  margin-bottom: 70px;
+}
+.card__title {
+  font-size: var(--xl-fs);
+  margin-bottom: 24px;
+}
+.card__description {
+  margin-bottom: 4.375rem;
+}
+.tag-list {
+  display: flex;
+  gap: 10px;
+}
+.card__tag {
+  background-color: #fff;
+  font-size: var(--xs-fs);
+  font-weight: 500;
+  padding: var(--sm-spacing);
+  border-radius: 10px;
 }
