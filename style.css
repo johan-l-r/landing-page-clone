@@ -118,6 +118,21 @@ h1 {
   flex-direction: column;
   gap: var(--md-spacing);
 }
+/* testimonials section */
+.testimonials {
+  background-color: var(--tertiary-bg-clr);
+}
+.author-list {
+  display: flex;
+}
+.author {
+  padding: var(--xs-fs);
+  border-radius: 10px;
+}
+.author.active {
+  background-color: var(--main-txt-clr);
+  color: var(--secondary-bg-clr);
+}
 
 /* utility classes */
 .text-left {
@@ -140,6 +155,12 @@ h1 {
 }
 .card {
   background-color: #D2F8DC;
+}
+.card--alt {
+  background-color: var(--secondary-bg-clr);
+}
+.card, 
+.card--alt {
   padding: var(--lg-spacing) var(--md-spacing);
   border-radius: 15px;
 }
