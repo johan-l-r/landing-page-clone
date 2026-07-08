@@ -25,7 +25,7 @@
 
   --sm-spacing: 0.75rem;
   --md-spacing: 1rem;
-  --lg-spacing: 2.5rem
+  --lg-spacing: 2.5rem;
 
 }
 
@@ -121,17 +121,50 @@ h1 {
 /* testimonials section */
 .testimonials {
   background-color: var(--tertiary-bg-clr);
+  padding: 2.25rem;
 }
 .author-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .author {
+  font-weight: 500;
   padding: var(--xs-fs);
   border-radius: 10px;
 }
 .author.active {
   background-color: var(--main-txt-clr);
   color: var(--secondary-bg-clr);
+}
+.author__name {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding-block: 10px;
+  border-top: 1px solid var(--main-txt-clr);
+}
+.author.active .author__name {
+  border-top: 1px solid #7D9276;
+}
+.author__location {
+  color: #7D9276; 
+}
+.quote__content {
+  font-size: 1.875rem;
+  margin-block: var(--lg-spacing);
+}
+.quote__footer {
+  display: flex;
+  align-items: center;
+}
+.author__photo {
+  width: 40px;
+  height: 40px;
+  margin: 0 var(--md-spacing) 0 0;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+.author__info {
+  font-weight: 400;
 }
 
 /* utility classes */
