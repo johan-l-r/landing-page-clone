@@ -72,7 +72,7 @@ body {
 section {
   background-color: var(--secondary-bg-clr);
 }
-section > p {
+.section-description {
   margin-block: 1.75rem;
 }
 
@@ -126,6 +126,7 @@ h1 {
 .author-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--lg-spacing);
 }
 .author {
   font-weight: 500;
@@ -165,6 +166,26 @@ h1 {
 }
 .author__info {
   font-weight: 400;
+}
+/* benefits section */
+.benefits .section-heading {
+  margin-top: var(--lg-spacing);
+}
+.benefits .section-description {
+  margin-bottom: 5rem;
+}
+.call-out {
+  border-top: 1px solid var(--main-txt-clr);
+}
+.call-out * {
+  margin-bottom: 1.875rem;
+}
+.call-out__img {
+  width: 1.875rem;
+  margin: var(--md-spacing) 0 1.875rem 0;
+}
+.call-out__title {
+  font-size: 1.875rem;
 }
 
 /* utility classes */
