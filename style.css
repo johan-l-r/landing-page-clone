@@ -187,6 +187,22 @@ h1 {
 .call-out__title {
   font-size: 1.875rem;
 }
+/* cta section */
+.cta {
+  padding: var(--lg-spacing);
+
+}
+.cta img {
+  margin-bottom: 1.25rem;
+}
+.cta .card {
+  background-color: var(--main-txt-clr);
+  color: var(--tertiary-bg-clr);
+  padding: 3.75rem;
+}
+.cta .card__title {
+  font-weight: 400;
+}
 
 /* utility classes */
 .text-left {
@@ -197,15 +213,23 @@ h1 {
 }
 
 /* components */
-.button {
+.button, 
+.button--alt {
   display: block;
-  background-color: var(--main-txt-clr);
-  color: var(--tertiary-bg-clr);
   font-size: var(--xs-fs);
   font-weight: 500;
   width: fit-content;
   padding: var(--sm-spacing);
   border-radius: 30px;
+  margin-block-start: var(--lg-spacing);
+}
+.button {
+  background-color: var(--main-txt-clr);
+  color: var(--tertiary-bg-clr);
+}
+.button--alt {
+  background-color: var(--tertiary-bg-clr);
+  color: var(--main-txt-clr);
 }
 .card {
   background-color: #D2F8DC;
