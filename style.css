@@ -189,19 +189,28 @@ h1 {
 }
 /* cta section */
 .cta {
+  background-color: var(--secondary-bg-clr);
   padding: var(--lg-spacing);
-
 }
 .cta img {
   margin-bottom: 1.25rem;
 }
 .cta .card {
   background-color: var(--main-txt-clr);
-  color: var(--tertiary-bg-clr);
+  color: var(--secondary-bg-clr);
   padding: 3.75rem;
 }
 .cta .card__title {
   font-weight: 400;
+}
+/* experts section */
+.experts {
+  background-color: var(--tertiary-bg-clr);
+  padding: 10rem 2rem
+}
+.experts .button {
+  padding: var(--md-spacing);
+  margin-inline: auto;
 }
 
 /* utility classes */
