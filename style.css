@@ -212,6 +212,39 @@ h1 {
   padding: var(--md-spacing);
   margin-inline: auto;
 }
+/* footer section */
+footer {
+  background-color: var(--main-txt-clr);
+  padding: 1.5rem 2rem;
+  color: var(--secondary-bg-clr);
+}
+footer * {
+  color: var(--secondary-bg-clr);
+}
+.footer__title {
+  display: block;
+  color: var(--secondary-bg-clr);
+  font-size: var(--lg-fs);
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  scroll-snap-align: center;
+  padding: 0;
+  margin-bottom: 3.75rem;
+}
+footer .button--alt {
+  margin: 0;
+}
+footer p {
+  font-size: var(--xs-fs);
+  font-weight: 500;
+}
+.copyright {
+  margin-top: var(--md-spacing);
+}
 
 /* utility classes */
 .text-left {
