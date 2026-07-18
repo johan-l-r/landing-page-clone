@@ -73,6 +73,22 @@ nav ul {
   padding: var(--sm-spacing);
   border-radius: 50px;
 }
+.card {
+  background-color: var(--secondary-bg-clr);
+  padding: var(--md-spacing); 
+  border-radius: 15px;
+}
+.tags {
+  gap: var(--sm-spacing);
+}
+.tag {
+  background-color: var(--tertiary-bg-clr);
+  font-size: var(--xs-fs);
+  color: var(--txt-clr);
+  font-weight: 500;
+  padding: var(--sm-spacing);
+  border-radius: 5px;
+}
 
 /* UTILITIES */
 .flex { 
