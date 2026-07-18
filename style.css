@@ -12,11 +12,16 @@
 }
 :root {
   --txt-clr: #2E4F21;
-  --secondary-bg-clr: #FFFFFF;
+  --main-bg-clr: #FFFFFF;
+  --secondary-bg-clr: #A0F1BD;
+  --tertiary-bg-clr: #f9f9f9;
 
   --xl-fs: 2.5rem;
+  --lg-fs: 2rem;
+  --md-fs: 1.75rem;
   --xs-fs: 0.75rem;
 
+  --lg-spacing: 2.5rem;
   --md-spacing: 1rem;
   --sm-spacing: 0.75rem;
 }
@@ -32,34 +37,54 @@ li {
   list-style: none;
 }
 img {
+  display: block;
   object-fit: contain;
+  width: 100%;
 }
 a {
   text-decoration: none;
 }
 body {
-  padding: var(--md-spacing);
+  background-color: var(--tertiary-bg-clr);
+  font-family: "work-sans";
 }
 
 /* TYPOGRAPHY */
 .heading {
+  color: var(--txt-clr);
   font-weight: 400;
 }
 .hero__heading {
   font-size: var(--xl-fs);
 }
+.section-heading {
+  font-size: var(--lg-fs);
+}
+.card__title {
+  font-size: var(--md-fs);
+}
 
 /* LAYOUT */
+.container {
+  padding: 1rem;
+}
 /* header & navbar */
 header {
-  justify-content: space-between;
+  background-color: var(--secondary-bg-clr);
 }
 nav ul {
+  font-size: var(--xs-fs);
   gap: var(--md-spacing);
 }
 /* hero section */
 .hero {
-  flex-wrap: wrap;
+  background-color: var(--secondary-bg-clr);
+  border-radius: 0 0 15px 15px;
+}
+
+/* services section */
+.cards {
+  gap: var(--md-spacing);
 }
 
 /* COMPONENTS */
@@ -68,14 +93,14 @@ nav ul {
   background-color: var(--txt-clr);
   font-size: var(--xs-fs);
   font-weight: 500;
-  color: var(--secondary-bg-clr);
+  color: var(--main-bg-clr);
   width: fit-content;
   padding: var(--sm-spacing);
   border-radius: 50px;
 }
 .card {
   background-color: var(--secondary-bg-clr);
-  padding: var(--md-spacing); 
+  padding: var(--lg-spacing) var(--md-spacing); 
   border-radius: 15px;
 }
 .tags {

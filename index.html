@@ -7,35 +7,51 @@
   <title>Noble Finance</title>
 </head>
 <body>
-  <header class="flex flex-vcenter">
-    <a href="#">Nobel Finance</a>
+  <header>
+    <div class="container flex items-center justify-between">
+      <a href="#">Nobel Finance</a>
 
-    <nav class="flex">
-      <ul class="flex flex-vcenter">
-        <li><a href="#">Services</a></li>
-        <li><a href="#" class="button">Book</a></li>
-      </ul>
-    </nav>
+      <nav class="flex">
+          <li><a href="#" class="button">Book</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="hero flex flex-hcenter">
-      <div class="hero__media">
-        <img 
-          src="./assets/imgs/hero_image.png" 
-          alt=""
-          class="block-center"
-        >
+    <section class="hero">
+      <div class="container flex flex-wrap justify-center">
+        <div class="hero__media">
+          <img 
+            src="./assets/imgs/hero_image.png" 
+            alt=""
+          >
+        </div>
+        <div class="hero__content">
+          <h1 class="heading hero__heading">
+            Financial Clarity You Can Trust
+          </h1>
+
+          <p>
+            Trusted financial guidance for every stage of life and business since 1987
+          </p>
+
+          <a href="#" class="button">Connect with our experts</a>
+        </div>
       </div>
-      <div class="hero__content">
-        <h1 class="heading hero__heading">
-          Financial Clarity You Can Trust
-        </h1>
-        <p>
-          Trusted financial guidance for every stage of life and business since 1987
+    </section>
+    
+    <section class="services">
+      <div class="container">
+        <h2 class="heading section-heading text-center">
+          Let us handle the numbers, so you can handle your success.
+        </h2>
+
+        <p class="text-center">
+          Serving individuals and small businesses since 1987
         </p>
 
         <div class="cards flex flex-wrap">
-          <article class="card flex flex-wrap">
+          <article class="card flex flex-wrap justify-center">
             <div class="card__media">
               <img src="./assets/imgs/card_1_img.png" alt="">
             </div>
@@ -46,6 +62,47 @@
               <p>
                 Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.
               </p>
+
+              <ul class="tags flex">
+                <li class="tag">1099 taxes</li>
+                <li class="tag">Dependents</li>
+                <li class="tag">Trust Taxes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card flex flex-wrap justify-center">
+            <div class="card__media">
+              <img src="./assets/imgs/card_2_img.png" alt="">
+            </div>
+            <div class="card__content">
+              <h3 class="heading card__title">
+                IRS Audit Assistance
+              </h3>
+              <p>
+                Offer expert guidance and representation to resolve tax audits and disputes with confidence.
+              </p>
+
+              <ul class="tags flex">
+                <li class="tag">1099 taxes</li>
+                <li class="tag">Dependents</li>
+                <li class="tag">Trust Taxes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card flex flex-wrap justify-center">
+            <div class="card__media">
+              <img src="./assets/imgs/card_3_img.png" alt="">
+            </div>
+            <div class="card__content">
+              <h3 class="heading card__title">
+                Bookkeeping & Accounting
+              </h3>
+              <p>
+                Maintain organized financial records and provide clear reports to support business growth and financial health.
+              </p>
+
               <ul class="tags flex">
                 <li class="tag">1099 taxes</li>
                 <li class="tag">Dependents</li>
