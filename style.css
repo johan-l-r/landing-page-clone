@@ -78,15 +78,24 @@ nav ul {
 .flex { 
   display: flex; 
 }
-.flex-center {
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
   align-items: center; 
+}
+.justify-center {
   justify-content: center;
 }
-.flex-vcenter {
-  align-items: center; 
+.justify-between {
+  justify-content: space-between;
 }
-.flex-hcenter {
-  justify-content: center;
+.text-center {
+  text-align: center;
+}
+.block-center {
+  display: block;
+  margin: 0 auto;
 }
 
 /* PAGE SPECIFIC */
