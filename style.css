@@ -21,7 +21,8 @@
   --md-fs: 1.75rem;
   --xs-fs: 0.75rem;
 
-  --lg-spacing: 2.5rem;
+  --xl-spacing: 2.5rem;
+  --lg-spacing: 2rem;
   --md-spacing: 1rem;
   --sm-spacing: 0.75rem;
 }
@@ -37,7 +38,6 @@ li {
   list-style: none;
 }
 img {
-  display: block;
   object-fit: contain;
   width: 100%;
 }
@@ -47,6 +47,7 @@ a {
 body {
   background-color: var(--tertiary-bg-clr);
   font-family: "work-sans";
+  color: var(--txt-clr);
 }
 
 /* TYPOGRAPHY */
@@ -87,6 +88,46 @@ nav ul {
   gap: var(--md-spacing);
 }
 
+/* testimonials section */
+.testimonials {
+  padding: var(--lg-spacing);
+}
+.testimonials .card--white {
+  padding: 1.5rem var(--md-spacing);
+}
+.author-list {
+  display: grid;
+  /* same size columns no matter the content */
+  grid-template-columns: repeat(
+    3, 
+    1fr
+  );
+}
+.author {
+  font-size: var(--xs-fs);
+  font-weight: 500;
+  padding: var(--sm-spacing) var(--md-spacing);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.author.selected {
+  background-color: var(--txt-clr);
+}
+.author.selected .author__profession {
+  color: var(--main-bg-clr);
+}
+.author__profession {
+  color: var(--txt-clr);
+  border-top: 1px solid #7D9276;
+  padding-block: 0.625rem;
+}
+.author__location {
+  color: #7D9276;
+}
+.quote__content {
+  font-size: 1.125rem;
+}
+
 /* COMPONENTS */
 .button {
   display: block;
@@ -98,10 +139,14 @@ nav ul {
   padding: var(--sm-spacing);
   border-radius: 50px;
 }
+
+.card, 
+.card--white {
+  border-radius: 15px;
+}
 .card {
   background-color: var(--secondary-bg-clr);
-  padding: var(--lg-spacing) var(--md-spacing); 
-  border-radius: 15px;
+  padding: var(--xl-spacing) var(--md-spacing); 
 }
 .tags {
   gap: var(--sm-spacing);
@@ -113,6 +158,9 @@ nav ul {
   font-weight: 500;
   padding: var(--sm-spacing);
   border-radius: 5px;
+}
+.card--white {
+  background-color: var(--main-bg-clr);
 }
 
 /* UTILITIES */
