@@ -106,14 +106,14 @@ nav ul {
 .author {
   font-size: var(--xs-fs);
   font-weight: 500;
-  padding: var(--sm-spacing) var(--md-spacing);
+  padding: var(--md-spacing) var(--sm-spacing);
   border-radius: 10px;
   cursor: pointer;
 }
-.author.selected {
+.author--active {
   background-color: var(--txt-clr);
 }
-.author.selected .author__profession {
+.author--active .author__profession {
   color: var(--main-bg-clr);
 }
 .author__profession {
@@ -124,8 +124,15 @@ nav ul {
 .author__location {
   color: #7D9276;
 }
+.citation {
+  gap: var(--md-spacing);
+}
 .quote__content {
   font-size: 1.125rem;
+}
+.citation__media {
+  width: 3rem;
+  border-radius: 15px;
 }
 
 /* COMPONENTS */
