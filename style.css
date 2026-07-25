@@ -69,6 +69,14 @@ body {
 .container {
   padding: 1rem;
 }
+.decorative-img {
+  background-image: url("./assets/imgs/benefits_img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 /* header & navbar */
 header {
   background-color: var(--secondary-bg-clr);
@@ -133,6 +141,20 @@ nav ul {
 .citation__media {
   width: 3rem;
   border-radius: 15px;
+}
+
+/* benefits section */
+.callout {
+  flex-direction: column;
+  gap: 1.875rem;
+  border-top: 1px solid var(--txt-clr);
+}
+.callout__media {
+  width: 1.875rem;
+}
+.callout__heading {
+  font-weight: 400;
+  font-size: 1.375rem;
 }
 
 /* COMPONENTS */
