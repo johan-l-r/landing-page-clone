@@ -52,7 +52,6 @@ body {
 
 /* TYPOGRAPHY */
 .heading {
-  color: var(--txt-clr);
   font-weight: 400;
 }
 .hero__heading {
@@ -69,14 +68,7 @@ body {
 .container {
   padding: 1rem;
 }
-.decorative-img {
-  background-image: url("./assets/imgs/benefits_img.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
+
 /* header & navbar */
 header {
   background-color: var(--secondary-bg-clr);
@@ -100,7 +92,8 @@ nav ul {
 .testimonials {
   padding: var(--lg-spacing);
 }
-.testimonials .card--white {
+.testimonials .card {
+  background-color: var(--main-bg-clr);
   padding: 1.5rem var(--md-spacing);
 }
 .author-list {
@@ -144,6 +137,9 @@ nav ul {
 }
 
 /* benefits section */
+.benefits {
+  background-color: var(--main-bg-clr);
+}
 .callout {
   flex-direction: column;
   gap: 1.875rem;
@@ -155,6 +151,21 @@ nav ul {
 .callout__heading {
   font-weight: 400;
   font-size: 1.375rem;
+}
+
+/* cta section */
+.cta {
+  background-color: var(--main-bg-clr);
+  padding: var(--xl-spacing);
+}
+.cta .card {
+  background-color: var(--txt-clr);
+  padding: 3.75rem;
+  color: var(--main-bg-clr);
+}
+.cta .button {
+  background-color: var(--main-bg-clr);
+  color: var(--txt-clr);
 }
 
 /* COMPONENTS */
@@ -169,8 +180,7 @@ nav ul {
   border-radius: 50px;
 }
 
-.card, 
-.card--white {
+.card { 
   border-radius: 15px;
 }
 .card {
@@ -187,9 +197,6 @@ nav ul {
   font-weight: 500;
   padding: var(--sm-spacing);
   border-radius: 5px;
-}
-.card--white {
-  background-color: var(--main-bg-clr);
 }
 
 /* UTILITIES */
