@@ -168,6 +168,15 @@ nav ul {
   color: var(--txt-clr);
 }
 
+/* experts section */
+.experts {
+  flex-direction: column;
+  padding: 10rem 1.5rem;
+}
+.experts .button {
+  padding: 1.5rem;
+}
+
 /* COMPONENTS */
 .button {
   display: block;
