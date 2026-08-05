@@ -27,8 +27,8 @@
   --sm-spacing: 0.75rem;
 }
 /* GLOBAL */
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   margin: 0;
   padding: 0;
@@ -65,13 +65,10 @@ body {
 }
 
 /* LAYOUT */
-.container {
-  padding: 1rem;
-}
-
 /* header & navbar */
 header {
   background-color: var(--secondary-bg-clr);
+  padding: var(--md-spacing);
 }
 nav ul {
   font-size: var(--xs-fs);
@@ -80,10 +77,14 @@ nav ul {
 /* hero section */
 .hero {
   background-color: var(--secondary-bg-clr);
+  padding: var(--xl-spacing) var(--md-spacing);
   border-radius: 0 0 15px 15px;
 }
 
 /* services section */
+.services {
+  padding: var(--md-spacing);
+}
 .cards {
   gap: var(--md-spacing);
 }
@@ -100,7 +101,7 @@ nav ul {
   display: grid;
   /* same size columns no matter the content */
   grid-template-columns: repeat(
-    3, 
+    3,
     1fr
   );
 }
@@ -139,6 +140,7 @@ nav ul {
 /* benefits section */
 .benefits {
   background-color: var(--main-bg-clr);
+  padding: var(--md-spacing);
 }
 .callout {
   flex-direction: column;
@@ -177,6 +179,24 @@ nav ul {
   padding: 1.5rem;
 }
 
+/* footer */
+footer {
+  background-color: var(--txt-clr);
+  color: var(--main-bg-clr);
+  padding: var(--md-spacing);
+}
+footer a {
+  color: var(--main-bg-clr);
+}
+footer p {
+  font-size: var(--xs-fs);
+  font-weight: 500;
+}
+footer .button {
+  background-color: var(--main-bg-clr);
+  color: var(--txt-clr);
+}
+
 /* COMPONENTS */
 .button {
   display: block;
@@ -189,12 +209,10 @@ nav ul {
   border-radius: 50px;
 }
 
-.card { 
-  border-radius: 15px;
-}
 .card {
+  border-radius: 15px;
   background-color: var(--secondary-bg-clr);
-  padding: var(--xl-spacing) var(--md-spacing); 
+  padding: var(--xl-spacing) var(--md-spacing);
 }
 .tags {
   gap: var(--sm-spacing);
@@ -209,14 +227,14 @@ nav ul {
 }
 
 /* UTILITIES */
-.flex { 
-  display: flex; 
+.flex {
+  display: flex;
 }
 .flex-wrap {
   flex-wrap: wrap;
 }
 .items-center {
-  align-items: center; 
+  align-items: center;
 }
 .justify-center {
   justify-content: center;
@@ -226,6 +244,9 @@ nav ul {
 }
 .text-center {
   text-align: center;
+}
+.flex-column {
+  flex-direction: column;
 }
 .block-center {
   display: block;
