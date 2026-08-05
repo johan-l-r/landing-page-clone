@@ -93,10 +93,6 @@ nav ul {
 .testimonials {
   padding: var(--lg-spacing);
 }
-.testimonials .card {
-  background-color: var(--main-bg-clr);
-  padding: 1.5rem var(--md-spacing);
-}
 .author-list {
   display: grid;
   /* same size columns no matter the content */
@@ -160,15 +156,6 @@ nav ul {
   background-color: var(--main-bg-clr);
   padding: var(--xl-spacing);
 }
-.cta .card {
-  background-color: var(--txt-clr);
-  padding: 3.75rem;
-  color: var(--main-bg-clr);
-}
-.cta .button {
-  background-color: var(--main-bg-clr);
-  color: var(--txt-clr);
-}
 
 /* experts section */
 .experts {
@@ -192,15 +179,11 @@ footer p {
   font-size: var(--xs-fs);
   font-weight: 500;
 }
-footer .button {
-  background-color: var(--main-bg-clr);
-  color: var(--txt-clr);
-}
 
 /* COMPONENTS */
-.button {
+.button,
+.button--white {
   display: block;
-  background-color: var(--txt-clr);
   font-size: var(--xs-fs);
   font-weight: 500;
   color: var(--main-bg-clr);
@@ -208,11 +191,27 @@ footer .button {
   padding: var(--sm-spacing);
   border-radius: 50px;
 }
+.button {
+  background-color: var(--txt-clr);
+}
+.button--white {
+  background-color: var(--main-bg-clr);
+  color: var(--txt-clr);
+}
 
 .card {
   border-radius: 15px;
   background-color: var(--secondary-bg-clr);
   padding: var(--xl-spacing) var(--md-spacing);
+}
+.card--white {
+  background-color: var(--main-bg-clr);
+  padding: 1.5rem var(--md-spacing);
+}
+.card--green {
+  background-color: var(--txt-clr);
+  padding: 3.75rem;
+  color: var(--main-bg-clr);
 }
 .tags {
   gap: var(--sm-spacing);
