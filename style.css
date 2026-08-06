@@ -19,6 +19,7 @@
   --xl-fs: 2.5rem;
   --lg-fs: 2rem;
   --md-fs: 1.75rem;
+  --sm-fs: 1rem;
   --xs-fs: 0.75rem;
 
   --xl-spacing: 2.5rem;
@@ -44,6 +45,9 @@ img {
 a {
   text-decoration: none;
 }
+p {
+  font-size: var(--sm-fs);
+}
 body {
   background-color: var(--tertiary-bg-clr);
   font-family: "work-sans";
@@ -65,10 +69,15 @@ body {
 }
 
 /* LAYOUT */
+.container {
+  width: 92%;
+  height: 100%;
+  margin: auto;
+}
 /* header & navbar */
 header {
   background-color: var(--secondary-bg-clr);
-  padding: var(--md-spacing);
+  padding-block: var(--md-spacing);
 }
 nav ul {
   font-size: var(--xs-fs);
@@ -77,13 +86,13 @@ nav ul {
 /* hero section */
 .hero {
   background-color: var(--secondary-bg-clr);
-  padding: var(--xl-spacing) var(--md-spacing);
+  padding-block: var(--xl-spacing) var(--md-spacing);
   border-radius: 0 0 15px 15px;
 }
 
 /* services section */
 .services {
-  padding: var(--md-spacing);
+  padding-block: var(--md-spacing);
 }
 .cards {
   gap: var(--md-spacing);
@@ -91,7 +100,7 @@ nav ul {
 
 /* testimonials section */
 .testimonials {
-  padding: var(--lg-spacing);
+  padding-block: var(--lg-spacing);
 }
 .author-list {
   display: grid;
@@ -136,10 +145,9 @@ nav ul {
 /* benefits section */
 .benefits {
   background-color: var(--main-bg-clr);
-  padding: var(--md-spacing);
+  padding-block: var(--md-spacing);
 }
 .callout {
-  flex-direction: column;
   gap: 1.875rem;
   border-top: 1px solid var(--txt-clr);
 }
@@ -154,13 +162,12 @@ nav ul {
 /* cta section */
 .cta {
   background-color: var(--main-bg-clr);
-  padding: var(--xl-spacing);
+  padding-block: var(--xl-spacing);
 }
 
 /* experts section */
 .experts {
-  flex-direction: column;
-  padding: 10rem 1.5rem;
+  padding-block: 10rem 1.5rem;
 }
 .experts .button {
   padding: 1.5rem;
@@ -170,7 +177,7 @@ nav ul {
 footer {
   background-color: var(--txt-clr);
   color: var(--main-bg-clr);
-  padding: var(--md-spacing);
+  padding-block: var(--md-spacing);
 }
 footer a {
   color: var(--main-bg-clr);
@@ -230,7 +237,7 @@ footer p {
   display: flex;
 }
 .flex-wrap {
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .items-center {
   align-items: center;
@@ -252,4 +259,9 @@ footer p {
   margin: 0 auto;
 }
 
-/* PAGE SPECIFIC */
+/* desktop view */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
