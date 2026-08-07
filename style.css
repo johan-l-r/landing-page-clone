@@ -207,9 +207,9 @@ footer p {
 }
 
 .card {
-  border-radius: 15px;
   background-color: var(--secondary-bg-clr);
   padding: var(--xl-spacing) var(--md-spacing);
+  border-radius: 15px;
 }
 .card--white {
   background-color: var(--main-bg-clr);
@@ -248,6 +248,9 @@ footer p {
 .justify-between {
   justify-content: space-between;
 }
+.collapse {
+  flex-direction: column;
+}
 .text-center {
   text-align: center;
 }
@@ -261,7 +264,18 @@ footer p {
 
 /* desktop view */
 @media screen and (min-width: 1200px) {
+  :root {
+    --xl-fs: 5rem;
+    --lg-fs: 3.75rem;
+    --md-fs: 2rem;
+  }
   .container {
     width: 1140px;
+  }
+  .card {
+    flex-direction: row-reverse;
+  }
+  .collapse {
+    flex-direction: row-reverse;
   }
 }
